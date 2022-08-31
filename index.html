@@ -1,0 +1,42 @@
+{%extends 'base.html'%}
+
+{%block title%}
+<title>Dictionary App</title>
+{%endblock%}
+
+{%block home_active%}
+class= 'active'
+{%endblock%}
+
+{%block content%}
+<div class="row">
+    <div class="col-md-6"></div>
+        <h1>The Dictionary App</h1>
+        <div class="row">
+           <div class="col-sm-6">
+                <form action="#", method="post">
+                    <div class="form-group">
+                        <label for="word">Word:</label>
+                        <input type="text" class="form-control" name="word" id="word"
+                        placeholder="Type in the word here:">
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block btn-lg">Submit</button>
+                </form>
+           </div>
+           <div class="col-md-6">
+                <form action="">
+                    <div class="form-group">
+                        <label for="word">Meaning:</label>
+                        <textarea class="form-control" id="word"
+                        placeholder="The meaning shows here:" disabled>{{user_response}}</textarea>
+                    </div>
+                </form>
+           </div>
+        </div>
+    </div>
+    <!-- <div>
+        <img src="{{url_for('static', filename = 'search image.jpg')}}" alt="">
+    </div> -->
+</div>
+{%endblock%}
+    
