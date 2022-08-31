@@ -1,0 +1,17 @@
+html {
+    position: relative;
+    min-height: 100%;
+  }
+  body {
+    margin-bottom: 30px; /* Margin bottom by footer height */
+  }
+  .footer {
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    height: 30px; /* Set the fixed height of the footer here */
+    background-color: #345803;
+    color: black;
+  }
+  
